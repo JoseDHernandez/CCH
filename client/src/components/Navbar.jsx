@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useUser } from "../context/User.context";
 const navigation = [
   { name: "Cartas", href: "/cards", current: false },
-  { name: "Informacion", href: "/info", current: false },
+  /*{ name: "Informacion", href: "/info", current: false },*/
 ];
 const userNavigation = [
   { name: "Reglas", href: "/Game/rules", current: false },

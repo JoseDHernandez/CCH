@@ -11,20 +11,23 @@ import http from "http";
 import sockets from "./routes/sockets.js";
 const app = express();
 const server = http.createServer(app);
-const url_sockets = urlClient + "/Game/party";
+//Cors of the Sockets
 const io = new SocketServer(server, {
   cors: {
     origin: urlClient,
     methods: ["GET", "POST", "PUT", "DELETE"],
   },
 });
+//Morgan format
 app.use(morgan("dev"));
+//axios cors
 app.use(
   cors({
     origin: urlClient,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
+//Routes and listeners
 sockets(io);
 app.use(express.json());
 app.use(cardsRoutes);
@@ -32,8 +35,8 @@ app.use(usersRoutes);
 app.use(gameRoutes);
 app.use(authRoutes);
 server.listen(PORT);
+//Console information
 console.log(`\n\n=================================================`);
 console.log("URL Client:  " + urlClient);
-console.log("URL Sockets: " + url_sockets);
 console.log("Server running:  " + DB_HOST + ":" + PORT);
 console.log(`=================================================\n\n`);
