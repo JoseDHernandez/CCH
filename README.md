@@ -1,6 +1,6 @@
 # Web Game Prototype of Cards Against Humanity
 
-This project is a ==personal prototype== of the original game [Cards Against Humanity](https://www.cardsagainsthumanity.com/). All intellectual property rights, including design, branding, and game name, belong to them. You can view the original [terms of use](https://www.cardsagainsthumanity.com/terms-of-use) and the license [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+This project is a **personal prototype** of the original game [Cards Against Humanity](https://www.cardsagainsthumanity.com/). All intellectual property rights, including design, branding, and game name, belong to them. You can view the original [terms of use](https://www.cardsagainsthumanity.com/terms-of-use) and the license [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This project was developed to learn about WebSockets, web components, REST APIs, and authentication using JSON Web Tokens. If you want the text of game cards, you can get the texts contained in the SQL archive `cartas_contra_humanidad`, specifically in the tables `cartas_blancas` for white cards and `cartas_negras` for black cards, under the same license as this project/repository. This also applies to the UI design and code.
 
