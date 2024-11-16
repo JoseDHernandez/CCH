@@ -126,7 +126,7 @@ Zar gameboard
     ```
 
     **Client configuration**
-    In `config.js` file, content in the path `client/scr/api
+    In `config.js` file, content in the path `client/scr/api`
 
     `URL` is the variable of url the server API, is similar to server (`index.js`) console information:
 
